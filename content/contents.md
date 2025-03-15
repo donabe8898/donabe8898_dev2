@@ -56,7 +56,7 @@ title: Contents
 
 !["KIPP_demo"](/KIPP_demoGIF.gif)
 
-## Not Saizeriy
+## Not Saizeriya
 
 - 存在しなさそうな某イタリアンレストランのメニューを生成するDiscord Bot
 - 1000円ガチャ(お酒OFFスイッチ付き)も実装済

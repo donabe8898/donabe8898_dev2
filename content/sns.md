@@ -5,6 +5,7 @@ title: SNS
 
 - 𝕩 / [@A10donabe](https://twitter.com/A10donabe)
 - Misskey 😻 / [@donabe@misskey.io](https://misskey.io/@donabe)
+- mixi2📶 / @donabe
 - mastodon 🐘 / [@yu5@mstdn.jp](https://mstdn.jp/@yu5)
 - BlueSky 🦋 / [@donabe8898.dev](https://bsky.app/profile/donabe8898.dev)
 - 静かなインターネット ✎ / [donabe](https://sizu.me/donabe)
