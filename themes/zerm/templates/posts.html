@@ -1,0 +1,23 @@
+{% import "macros/lists.html" as lists -%}
+{% extends "index.html" -%}
+
+
+
+{%- block title %}
+    <title>記事一覧 - {{ config.title }}</title>
+{%- endblock title -%}
+
+{%- block main -%}
+{%- block pagination -%}
+    {{ pagination::paginate() }}
+
+    <div>
+        {{ lists::list_pages() }}
+    </div>
+
+    {{ pagination::paginate() }}
+{%- endblock pagination -%}
+
+{%- endblock main -%}
+
+

@@ -1,28 +1,45 @@
 # The URL the site will be built for
-base_url = "https://donabe8898.dev"
+base_url = "/"
 title = "どな部屋"
 description = "毎日インターネットが日課"
 
-theme = "zola-minimal"
-# default_language = "jp"
+default_language = "ja"
 
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+theme = "zerm"
+compile_sass=true
 
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
-
-generate_feeds = false
-
-minify_html = false
+taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-highlight_theme = "Tomorrow"
+highlight_theme = "axar"
 
 [extra]
-# Put all your custom variables here
-favicon = "favicon.ico"
+author="donabe"
+show_author = false
+show_categories = true
+show_tags = true
+theme_color = "blue"
+show_menu_items = 3
+full_width = false
+favicon = "/favicon.ico"
+logo_text = "~/どな部屋"
+
+# Menu items to display. You define a url and the name of the menu item.
+# NOTE: `$BASE_URL/` must be included in the url name.
+main_menu = [
+    { url = "/profile/", name = "👤プロフィール" },
+    { url = "/contact/", name = "📱Contact" },
+    { url = "/blog/", name = "📖ブログ" },
+    { url = "https://github.com/donabe8898", name = "GitHub", external = true },
+    { url = "https://zenn.dev/donabe8898", name = "Zenn", external = true },
+    { url = "/computer/", name = "マイコンピュータ" },
+    { url = "https://sizu.me/donabe", name = "しずかなインターネット", external = true },
+]
+menu_more = "show more"
+read_more="りーどモア"
+read_other_posts = "もっと見る"
+enable_katex = true
+center = true
+disqus = { enabled=false, short_name="donalog" }

@@ -1,0 +1,101 @@
+{% import "macros/head.html" as head -%} {% import "macros/logo.html" as logo
+-%} {% import "macros/header.html" as header -%} {% import
+"macros/extended_header.html" as extended_header -%} {% import
+"macros/lists.html" as lists -%} {% import "macros/posts.html" as posts -%} {%
+import "macros/social.html" as social -%} {% import "macros/utils.html" as utils
+-%} {% import "macros/menu.html" as menu -%} {% import "macros/pagination.html"
+as pagination -%} {% import "macros/footer.html" as footer -%} {% import
+"macros/extended_footer.html" as extended_footer -%} {% import
+"macros/comments.html" as comments -%}
+
+<!doctype html>
+<html lang="{{ lang }}">
+    <head>
+        {%- block title -%}
+        <title>{{ config.title }}</title>
+        {%- endblock title -%} {%- block general_meta -%} {{
+        head::general_meta() }} {%- endblock general_meta -%} {%- block
+        og_preview -%} {{ social::og_preview() }} {%- endblock og_preview -%}
+        {%- block fonts -%} {{ head::fonts() }} {%- endblock fonts -%} {%- block
+        css -%} {{ head::styling() }} {%- endblock css -%} {%- block favicon -%}
+        {{ head::favicon() }} {%- endblock favicon -%} {%- block rss -%} {{
+        head::rss() }} {%- endblock rss -%} {%- block math -%} {%- endblock math
+        -%}
+    </head>
+    <body>
+        {# "container full" when width == True, regardless of center "container
+        center" when only center == True "container" when both false. #} {%- if
+        config.extra.full_width -%} {%- set container = "container full" -%} {%-
+        elif config.extra.center -%} {%- set container = "container center" -%}
+        {%- else -%} {%- set container = "container" -%} {%- endif -%}
+
+
+        <div class="{{ container }}">
+            {%- block header -%} {{ header::header() }} {%- endblock header -%}
+            {%- block main -%}
+            <!-- トップページ構築 -->
+
+            <div class="welcome">
+                <h1>シンプル、軽量なウェブサイト</h1>
+            </div>
+            <hr>
+            <div class="near-archlinux">
+                <b>
+                    <p>Donabe8898 のウェブサイトにようこそ。</p>
+                </b>
+
+                <p>Keep It Simple を標榜する、軽量で柔軟性に優れた私のウェブサイトです。</p>
+            </div>
+            
+            <div class="link">
+            <h2>相互リンク</h2>
+            <a href="https://yude.jp">
+                <img src = "/img/yude_banner.png"  alt="yude.jp">
+            </a>
+            <br>
+            <a href="https://yude.jp">
+                <img src = "/img/mknchan.webp" width="200px"  alt="yude.jp">
+            </a>
+            <br>
+            <p>
+                <a href="https://h6i.org/">点点公社さん</a>
+            </p>
+            <h2>勝手リンク</h2>
+            <p>
+                <a href="https://kichi2004.jp/">kichiさん</a>
+            </p>
+            <p>
+                <a href="https://arkw.net/">Arakawaさん</a>
+            </p>
+            <p>
+                <a href="https://swawa.dev/">すわわゆさん</a>
+            </p>
+            <p>
+                <a href="https://scrapbox.io/soracat/soracat">soracatさん</a>
+            </p>
+            <p>
+                <a href="https://poyo.me/">そすうぽよさん</a>
+            </p>
+            </div>
+            <h2>その他</h2>
+            <a href="https://archlinux.org/">
+                <img src = "/img/arch8015linux.png"  alt="archlinux.org">
+            </a>
+            {%- endblock main -%}
+
+            <!-- トップページ構築 -->
+
+
+            {%- block footer -%}
+            <footer class="footer">
+                <div class="footer__inner">
+                    {%- block copyright -%} {{ footer::copyright() }} {%-
+                    endblock copyright -%} {%- block script -%} {{
+                    footer::script() }} {%- endblock script -%}
+                </div>
+                {{ extended_footer::extended_footer() }}
+            </footer>
+            {%- endblock footer -%}
+        </div>
+    </body>
+</html>
