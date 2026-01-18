@@ -31,11 +31,11 @@ title = "profile"
 
 # 趣味
 
-- 🎮 Play Video Game (Minecraft, Splatoon3, more Shooting Games…)
-- 🧑‍💻 Programming (Software, Atcoder…)
-- 🚅 Railfan (Ride or travel)
-- 🚗 Driving (まじで車欲しい)
-- 🏊🏻 Swimming (平泳ぎが得意です)
+- 🖥️ Computing -> Linux, BSD, Electronics
+- 🎮 Play Video Game -> Minecraft, Splatoon3, more Shooting Games…
+- 🧑‍💻 Programming -> Rust, Go, C
+- 🚗 Driving
+
 
 # 公開鍵
 - 🔑[GPG](https://github.com/donabe8898.gpg)
