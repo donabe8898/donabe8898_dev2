@@ -33,3 +33,16 @@ title = "computer"
 - 8GB Memory
 - Intel UHD Graphics
 - 256GB NVMe SSD
+
+# Server
+## Minecraft server
+- Linux x86_64
+- Intel 12th core i3
+- 16GB RAM
+- WD Red SATA SSD
+
+## Tailscale Exit Node
+- Linux x86_64
+
+## RADIUS Server
+- Linux x86_64
