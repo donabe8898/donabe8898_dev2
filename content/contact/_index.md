@@ -4,6 +4,8 @@ title = "contact"
 
 # Contact
 
+- Email 📨 / [i@donabe8898.dev](mailto:i@donabe8898.dev)
+
 - 𝕩 / [@A10donabe](https://twitter.com/A10donabe)
 - Misskey 😻 / [@donabe@misskey.io](https://misskey.io/@donabe)
 - mixi2📶 / [@donabe](https://mixi.social/@donabe)
